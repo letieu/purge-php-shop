@@ -1,0 +1,27 @@
+.grid_1_of_4.images_1_of_4 img{
+    height: 322px;
+}
+
+.grid_1_of_4.images_1_of_4 h2{
+    height: 50px;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+
+/*phan trang*/
+
+.paginate-item {
+    margin-top: 20px;
+    display: block;
+    margin-left: 5px;
+    background-color: #00aeef;
+    border-radius: 50%;
+    padding: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    color:white;
+}
+.paginate-item.active,
+.paginate-item:hover{
+    background: #2E8794;
+}
