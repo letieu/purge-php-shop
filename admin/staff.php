@@ -16,7 +16,8 @@ if(!isset($_GET['id']) || $_GET['id'] == NULL){
 
 <div class="grid_10">
     <div class="box round first grid">
-        <h2>Danh sách thương hiệu</h2>
+        <h2>Danh sách thương hiệu <a href="staffadd.php"  style="margin-left: 20px;background: cadetblue;color:white; padding: 5px; display: inline-block; border: 2px solid cadetblue; border-radius: 3px">Thêm nhân viên</a></h2>
+
         <div class="block">
             <?php
             if(isset($delbrand)){
@@ -47,9 +48,9 @@ if(!isset($_GET['id']) || $_GET['id'] == NULL){
                             <td><?php echo $i; ?></td>
                             <td><?php echo $result['name']; ?></td>
                             <td><?php echo $result['phone']; ?></td>
-                            <td><?php echo $result['salary']; ?></td>
+                            <td><?php echo number_format($result['salary']); ?>đ</td>
                             <td><?php echo $result['position']; ?></td>
-                            <td><a href="brandedit.php?brandid=<?php echo $result['brandId']; ?>">Sửa</a> || <a onclick = "return confirm('Bạn có chắc chắn muốn xóa???')" href="?id=<?php echo $result['id'] ?>">Xóa</a></td>
+                            <td><a href="staffedit.php?id=<?php echo $result['id']; ?>">Sửa</a> || <a onclick = "return confirm('Bạn có chắc chắn muốn xóa???')" href="?id=<?php echo $result['id'] ?>">Xóa</a></td>
                         </tr>
                         <?php
                     }
