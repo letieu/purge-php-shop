@@ -80,6 +80,7 @@
 				<li class="ic-form-style"><a href="changepassword.php"><span>Thay đổi mật khẩu</span></a></li>
 				<li class="ic-grid-tables"><a href="inbox.php"><span>Đơn hàng</span></a></li>
                 <li class="ic-charts"><a href="../index.php"><span>Website</span></a></li>
+                <li class="ic-user"><a href="../admin/staff.php"><span>Nhanh vien</span></a></li>
             </ul>
         </div>
         <div class="clear">

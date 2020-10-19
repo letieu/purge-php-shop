@@ -22,8 +22,9 @@
                 </li>
                 <li><a class="menuitem">Kho Hàng</a>
                     <ul class="submenu">
-                        <li><a href="warehouse.php">Quản lý kho</a> </li>
-                     
+                        <li><a href="warehouse.php">Lich sử nhập hàng</a> </li>
+                        <li><a href="warehouseadd.php">Nhập sản phẩm</a> </li>
+
                     </ul>
                 </li>
                 

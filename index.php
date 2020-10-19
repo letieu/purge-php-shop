@@ -63,7 +63,6 @@ $query_all = mysqli_query($con, $sql_all);
             }
             ?>
         </h5>
-    </h5>
 </div>
 <?php
 include 'inc/footer.php';

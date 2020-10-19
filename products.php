@@ -47,23 +47,21 @@
 				}
 				}
 				 ?>
-		<center><h5 style="color:#F00; margin-bottom:20px; float:left; width:1250px;">
-			<?php
-            // Phân Trang
-                $sql_phantrang="select * from tbl_product";
-                $sql_trang=mysqli_query($con, $sql_phantrang);
-                $count=mysqli_num_rows($sql_trang);
-                $a=ceil($count/4); // Chia 8 là hiển thị 8 sp trên mỗi trang //ceil là làm tròn số trang
-                for($b=1;$b<=$a;$b++){
-                    echo '<a href="?trang='.$b.'">'.'  '.$b.'  '.'</a>';
-                }
-            ?>
+
+        <h5 style="color:#F00; margin-bottom:20px; float:left; width:100%; display: flex; justify-content: center">
             <?php
-                if($get_trang >= 1)
-                 echo '| Trang hiện tại : '.' '.$get_trang.' |'
+            // Phân Trang
+            $trang = $_GET['trang'];
+            $sql_phantrang = "select * from tbl_product";
+            $sql_trang = mysqli_query($con, $sql_phantrang);
+            $count = mysqli_num_rows($sql_trang);
+            $a = ceil($count / 16); // Chia 8 là hiển thị 8 sp trên mỗi trang //ceil là làm tròn số trang
+            for ($b = 1; $b <= $a; $b++) {
+                echo '<a class="paginate-item ' . (($b == $trang) ? 'active' : '') . '"' .' href="?trang=' . $b . '">' . '  ' . $b . '  ' . '</a>';
+            }
             ?>
-            </h2>
-            </center>
+        </h5>
+
     </div>
  </div>
 <?php 

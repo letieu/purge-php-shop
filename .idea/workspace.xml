@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9090af1f-f2fe-44fb-9bd9-f5888570492c" name="Default Changelist" comment="" />
+    <list default="true" id="9090af1f-f2fe-44fb-9bd9-f5888570492c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/admin/staff.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/staffadd.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/warehouseadd.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classes/staff.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classes/warehose.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/css/nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/css/nav.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/inc/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/inc/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/inc/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/inc/sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/warehouse.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/warehouse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/product.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products.php" beforeDir="false" afterPath="$PROJECT_DIR$/products.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,7 +27,7 @@
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/helpers/mailer" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ixH8LFf5uswMj6RPJAJOAmXzGi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -24,9 +39,14 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/admin" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -40,6 +60,8 @@
       <workItem from="1602865878681" duration="1672000" />
       <workItem from="1602911920212" duration="3832000" />
       <workItem from="1602916371696" duration="2805000" />
+      <workItem from="1603006377191" duration="394000" />
+      <workItem from="1603018904062" duration="9869000" />
     </task>
     <servers />
   </component>
@@ -67,10 +89,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="-1920" y="32" width="954" height="518" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602845588075" />
-    <state x="539" y="193" width="442" height="559" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1602919176746">
+    <state x="539" y="181" width="442" height="559" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603028333080">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="539" y="193" width="442" height="559" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1602919176746" />
+    <state x="539" y="181" width="442" height="559" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1603028333080" />
     <state x="665" y="304" width="596" height="510" key="find.popup" timestamp="1602842331802">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

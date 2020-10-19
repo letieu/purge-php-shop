@@ -18,7 +18,7 @@
  ?>
 <div class="grid_10">
     <div class="box round first grid">
-        <h2>Quản lý kho</h2>
+        <h2>Lich sử nhập hàng</h2>
         <div class="block">  
             <table class="data display datatable" id="example">
 			<thead>
@@ -26,17 +26,12 @@
 					<th>ID</th>
 					<th>Code</th>
 					<th>Tên sản phẩm</th>
-				
-					<th>Số lượng ban đầu</th>
-					<th>Đã bán</th>
-				
+
 					<th>Số lượng trước nhập</th>
 					<th>Số lượng thêm</th>
 					<th>Số lượng sau nhập</th>
-					
+				    <th>Chi phí</th>
 					<th>Ngày nhập</th>
-
-					
 					
 				</tr>
 			</thead>
@@ -60,16 +55,7 @@
 					<td><?php echo $result['productName'] ?></td>
 					
 					<td>
-						<?php echo $result['productQuantity'] ?>
-
-					</td>
-					<td>
-						<?php echo $result['product_soldout'] ?>
-
-					</td>
-					
-					<td>
-						<?php echo $result['product_remain'] - $result['sl_nhap'] ?>
+						<?php echo ($result['sl_sau'] - $result['sl_nhap']); ?>
 
 					</td>
 					<td>
@@ -77,12 +63,14 @@
 
 					</td>
 					<td>
-						<?php echo $result['product_remain'] ?>
+						<?php echo $result['sl_sau'] ?>
 
 					</td>
+                    <td>
+                        <?php echo number_format($result['price'] * $result['sl_nhap']); ?> đ
+                    </td>
 					<td>
 						<?php echo $result['sl_ngaynhap'] ?>
-
 					</td>
 					
 					
