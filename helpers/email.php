@@ -3,8 +3,8 @@ ini_set('display_startup_errors', 1);
 ini_set('display_errors', 1);
 error_reporting(-1);
 
-const FROM = 'letieu8@gmail.com';
-const PASS = 'huyentrang272';
+$from = base64_decode('bGV0aWV1OEBnbWFpbC5jb20=');
+$pass = base64_decode('aHV5ZW50cmFuZzI3Mg==');
 
 $filepath = realpath(dirname(__FILE__));
 $user_id = $_SESSION['customer_id'];
@@ -25,13 +25,13 @@ $mail->CharSet = "UTF-8";
 $amount = 0;
 
 // =============================  Đọc thông tin user ==================================
-$query = "select * from tbl_customer where id='$user_id'";
+$query = "select * $from tbl_customer where id='$user_id'";
 $result = $database->select($query);
 $user = $result->fetch_assoc();
 $productIds = [];
 
 // =============================  Đọc thông tin đơn hàng ==============================
-$query = "select * from tbl_order where customer_id='$user_id' and send_mail='0'";
+$query = "select * $from tbl_order where customer_id='$user_id' and send_mail='0'";
 $result = $database->select($query);
 
 // =============================  Nội dung biên lai ==============================
@@ -90,21 +90,23 @@ $database->update($query);
 
 function sendMail($toMail, $body, $image = [], $title='')
 {
+    global $from;
+    global $pass;
     global $mail;
     try {
         //Server settings
         $mail->isSMTP();                                            // Send using SMTP
         $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-        $mail->Username   = FROM;                     // SMTP username
-        $mail->Password   = PASS;                               // SMTP password
+        $mail->Username   = $from;                     // SMTP username
+        $mail->Password   = $pass;                               // SMTP password
         $mail->SMTPSecure = 'tls';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
         $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
         //Recipients
-        $mail->setFrom(FROM, 'Shop');
+        $mail->setFrom($from, 'Shop');
         $mail->addAddress($toMail);     // Add a recipient
-        $mail->addReplyTo(FROM, 'Information');
+        $mail->addReplyTo($from, 'Information');
 
         // Content
         $mail->isHTML(true);                                  // Set email format to HTML
